@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: 0;
+    color: #00A1AB;
+}
+
+header p {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.card {
+    width: 16.5rem;
+    padding: 2em;
+    border-radius: 1em;
+    margin: 0 0.5em 1em;
+    color: #4E4E4E;
+    background: linear-gradient(-45deg, #E5E3E8, #FAFAFA);
+}
+
+.card > span {
+    font-size: 1.4rem;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 1em;
+}
+
+.card h2 {
+    color: #00A1AB;
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.card h2 > span {
+    display: block;
+    font-size: 1.5625rem;
+    font-weight: 300;
+}
+
+.card p {
+    margin: 2em 0;
+    line-height: 1.5;
+}
+
+.card a,
+footer a {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s background;
+    color: #FFF;
+    background: #4E4E4E;
+    cursor: pointer;
+}
+
+.card a:hover {
+    opacity: 0.7;
+}
+
+.card.recommended {
+    color: #FFF;
+    background: linear-gradient(-45deg, #00A1AB, #3741A0);
+}
+.card.recommended h2 {
+    color: #FFF;
+}
+
+.card.recommended a {
+    color: #4E4E4E;
+    background: #FFF;
+}
+
+footer p {
+    color: #4E4E4E;
+    margin-bottom: 0.5em;
+    font-size: 1.3125rem;
+}
+
+footer a {
+    background-color: #00A1AB;
+}
